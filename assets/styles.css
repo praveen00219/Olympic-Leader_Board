@@ -1,0 +1,58 @@
+.logo {
+  background-image: url("/assets/img/bg.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input,
+select,
+button {
+  border-radius: 5px;
+}
+
+tbody {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+/* ----------animation------- */
+
+/* Sliding Images Animation */
+.sliding-images-container {
+  overflow: hidden;
+  position: relative;
+  height: 110px;
+  background-color: #f3f3f3;
+}
+
+.sliding-images {
+  margin-top: 5px;
+  display: flex;
+  width: 100%;
+  animation: slide 20s linear infinite;
+}
+
+.sliding-image {
+  width: 110px;
+  height: 90px;
+  margin-right: 15px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

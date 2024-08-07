@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Leaderboard</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mx-auto p-1">
+        <div class="logo flex w-full relative">
+            <img class="absolute left-0 top-0 h-24 w-24 mt-1"
+                src="https://upload.wikimedia.org/wikipedia/en/d/d1/2024_Summer_Olympics_logo.svg" alt="">
+        </div>
+
+        <!-- Sliding Images Section -->
+        <div class="sliding-images-container">
+            <div class="sliding-images">
+                <img src="/assets/img/olympic-teams/1956_Melbourne_Summer_Olympics_logo.webp" alt="Team 1"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1960_California_Winter_Olympics_logo.webp" alt="Team 2"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1980-Moscow-Soviet-Union-Olympics.webp" alt="Team 3"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1984-Los-Angeles-Summer-Olympics-logo.webp" alt="Team 4"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1984_Sarajevo_Winter_Olympics_logo.webp" alt="Team 5"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1988_Calgary_Winter_Olympics_logo.webp" alt="Team 6"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1998_Nagano_Winter_Olympics_logo.webp" alt="Team 7"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/2000-Sydney-Summer-Olympics-logo-.webp" alt="Team 8"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/2016_Rio_Summer_Olympics_logo.webp" alt="Team 9"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/2024_Summer_Olympics_logo.webp" alt="Team 10"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/2028-Summer-Olympics-LA-Logo.webp" alt="Team 11"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/india.png" alt="Team 12" class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1980-Moscow-Soviet-Union-Olympics.webp" alt="Team 3"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1984-Los-Angeles-Summer-Olympics-logo.webp" alt="Team 4"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1984_Sarajevo_Winter_Olympics_logo.webp" alt="Team 5"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1988_Calgary_Winter_Olympics_logo.webp" alt="Team 6"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/1998_Nagano_Winter_Olympics_logo.webp" alt="Team 7"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/2000-Sydney-Summer-Olympics-logo-.webp" alt="Team 8"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/2016_Rio_Summer_Olympics_logo.webp" alt="Team 9"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/2024_Summer_Olympics_logo.webp" alt="Team 10"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/2028-Summer-Olympics-LA-Logo.webp" alt="Team 11"
+                    class="sliding-image ">
+                <img src="/assets/img/olympic-teams/india.png" alt="Team 12" class="sliding-image ">
+            </div>
+        </div>
+
+        <div class="mt-1">
+            <hr>
+            <div class="p-4">
+                <div
+                    class="bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-3xl font-black tracking-widest mb-6 text-center mt-4">
+                    Olympic Leaderboard
+                </div>
+                <div class="mb-4 flex flex-wrap justify-center gap-3">
+                    <input id="playerFirstName" type="text" placeholder="First Name" class="border p-2 mr-2">
+                    <input id="playerLastName" type="text" placeholder="Last Name" class="border p-2 mr-2">
+                    <input id="playerScore" type="number" placeholder="Score" class="border p-2 mr-2 w-32">
+                    <select id="playerCountry" class="border p-2 mr-2">
+                        <option value="">Select Country</option>
+                        <option value="USA">USA</option>
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                    <input id="playerImage" type="file" class="border p-2 mr-2 bg-white">
+                    <button id="addPlayer" class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-4 py-2">
+                        Add Player
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex">
+                <!-- Top 3 Players Section -->
+                <div class="w-1/4 mt-6 p-4 border-r-2 border-gray-300">
+                    <h2 class="text-center text-xl  font-semibold bg-green-300 p-1 rounded">🏆️ Winners 2024 🏆️</h2>
+                    <div id="top3" class="mt-4">
+                        <div id="🥇" class="text-center mb-6"></div>
+                        <div id="🥈" class="text-center mb-6"></div>
+                        <div id="🥉" class="text-center mb-6"></div>
+                    </div>
+                </div>
+
+                <!-- Leaderboard Section -->
+                <div class="w-3/4 mx-3 relative flex justify-center">
+                    <img class="w-72 h-72 mt-20 opacity-20" src="/assets/img/olympics2024-logo.jpg" alt="">
+                    <table class="absolute top-10 left-0 table-auto w-full">
+                        <thead class="bg-green-100">
+                            <tr>
+                                <th class="px-4 py-2">Image</th>
+                                <th class="px-4 py-2">First Name</th>
+                                <th class="px-4 py-2">Last Name</th>
+                                <th class="px-4 py-2">Country</th>
+                                <th class="px-4 py-2">Score</th>
+                                <th class="px-4 py-2">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="playerTable" class="px-4">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>
