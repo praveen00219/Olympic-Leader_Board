@@ -4,7 +4,7 @@ Welcome to the Olympic LeaderBoard project! This web application showcases a dyn
 
 ## Live Demo
 
-You can view the live demo of the project at: [Olympic LeaderBoard Demo](https://your-live-demo-link.com)
+You can view the live demo of the project at: [Olympic LeaderBoard Demo](https://praveen-olympic-leader-board.netlify.app/)
 
 ## Features
 
